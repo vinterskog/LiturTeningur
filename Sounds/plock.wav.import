@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/plock.wav-90e4faf439c05697bd53f7bc76533ed7.sample"
+
+[deps]
+
+source_file="res://Sounds/plock.wav"
+source_md5="51aebfb622e474eb808334321afb5188"
+
+dest_files=[ "res://.import/plock.wav-90e4faf439c05697bd53f7bc76533ed7.sample" ]
+dest_md5="7b980ed6452115e7c5cc42ab01cce4d6"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0

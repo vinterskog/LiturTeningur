@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/muzak.ogg-0489fd933e2a36d9054b4a0a40da198e.oggstr"
+
+[deps]
+
+source_file="res://Sounds/muzak.ogg"
+source_md5="0b1d7890313af92088bce046c57169d6"
+
+dest_files=[ "res://.import/muzak.ogg-0489fd933e2a36d9054b4a0a40da198e.oggstr" ]
+dest_md5="c9f532c00f3274faf4359d3f9d8dc1b6"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/piou.wav-28ef9a4d07b4d7385074ad597ca1e049.sample"
+
+[deps]
+
+source_file="res://Sounds/piou.wav"
+source_md5="38819a58b7ed1d0f3971bd65ff10dc45"
+
+dest_files=[ "res://.import/piou.wav-28ef9a4d07b4d7385074ad597ca1e049.sample" ]
+dest_md5="9b33cce5bd9692166a12c00d5a8a3956"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

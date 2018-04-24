@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/paint.wav-c0b262184d34911b416e06c7dc8ee3fa.sample"
+
+[deps]
+
+source_file="res://Sounds/paint.wav"
+source_md5="1ef2bb55c9d2f5e046a9c17d51af9296"
+
+dest_files=[ "res://.import/paint.wav-c0b262184d34911b416e06c7dc8ee3fa.sample" ]
+dest_md5="a7dbc0025c982dc2b8c30508d19036c1"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

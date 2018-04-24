@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Materials/cube.shader" type="Shader" id=1]
+
+[resource]
+
+render_priority = 1
+shader = ExtResource( 1 )
+shader_param/albedo = Color( 0, 0.226563, 1, 0.921569 )
+shader_param/specular = 0.5
+shader_param/metallic = 0.39
+shader_param/roughness = 0.7
+shader_param/point_size = 1.0
+shader_param/metallic_texture_channel = Plane( 1, 0, 0, 0 )
+shader_param/roughness_texture_channel = Plane( 1, 0, 0, 0 )
+shader_param/emission = Color( 0, 0.122131, 0.539063, 1 )
+shader_param/emission_energy = 2.0
+shader_param/subsurface_scattering_strength = 0.4
+shader_param/uv1_scale = Vector3( 1, 1, 1 )
+shader_param/uv1_offset = Vector3( 0, 0, 0 )
+shader_param/uv2_scale = Vector3( 1, 1, 1 )
+shader_param/uv2_offset = Vector3( 0, 0, 0 )
+
