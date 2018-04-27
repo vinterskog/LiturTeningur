@@ -24,6 +24,22 @@ func _input(e):
 				Global.cur_col = 4
 			emit_signal("update_gui")
 			
+	if e is InputEventKey and e.is_pressed():
+		var update = true
+		
+		if e.scancode == KEY_1:
+			Global.cur_col = 1
+		elif e.scancode == KEY_2:
+			Global.cur_col = 2
+		elif e.scancode == KEY_3:
+			Global.cur_col = 3
+		elif e.scancode == KEY_4:
+			Global.cur_col = 4
+		else:
+			update = false
+		
+		if update:
+			emit_signal("update_gui")
 		
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
