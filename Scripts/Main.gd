@@ -6,7 +6,7 @@ var quitbox = preload("res://Scenes/Quit.tscn")
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	Global.play_music("res://Sounds/muzak.ogg")
+	#Global.play_music("res://Sounds/muzak.ogg")
 
 func _input(e):
 	if e.is_action_pressed("ui_cancel"):

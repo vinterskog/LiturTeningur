@@ -1,0 +1,11 @@
+- alternative color scheme for colorblinds
+- increase raycast distance?
+- options menu:
+	 - mouse sensitivity
+	 - music and sound volume
+
+- more gameplay! 
+	- especially win conditions. getting to the top of the cube seems to be nice idea! start further down?
+	- special cube types which yield bonus items?
+	
+- more muzak!

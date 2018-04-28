@@ -32,7 +32,7 @@ void fragment() {
 	vec2 base_uv = UV;
 	vec4 albedo_tex = texture(texture_albedo,base_uv);
 	float c = 1.0;
-	if (base_uv.x < 0.01 || base_uv.x > 0.99 || base_uv.y < 0.01 || base_uv.y > 0.99) c = 0.0;
+	if (base_uv.x < 0.01 || base_uv.x > 0.99 || base_uv.y < 0.01 || base_uv.y > 0.99) c = 0.4;
 	ALBEDO = albedo.rgb * albedo_tex.rgb * c;
 	float metallic_tex = dot(texture(texture_metallic,base_uv),metallic_texture_channel);
 	METALLIC = metallic_tex * metallic;
@@ -40,7 +40,7 @@ void fragment() {
 	ROUGHNESS = roughness_tex * roughness;
 	SPECULAR = specular;
 	vec3 emission_tex = texture(texture_emission,base_uv).rgb;
-	EMISSION = (emission.rgb+emission_tex)*emission_energy;
+	EMISSION = (emission.rgb+emission_tex)*emission_energy*c;
 	float sss_tex = texture(texture_subsurface_scattering,base_uv).r;
 	SSS_STRENGTH=subsurface_scattering_strength*sss_tex;
 }

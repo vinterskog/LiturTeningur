@@ -2,8 +2,6 @@ extends GridMap
 
 signal update_gui
 
-var size = 15
-
 var perlin = preload("res://Scripts/perlin.gd").PerlinNoise.new()
 var particles = preload("res://Scenes/Particles.tscn")
 var thinking_scene = preload("res://Scenes/Thinking.tscn")
@@ -13,20 +11,34 @@ var to_destroy = {}
 var particle_buffer = []
 var thr
 
+var map = []
+
 func _ready():
-	generate()
+	#var size = 15
+	var size = 10
+	
+	generate(Vector3(-size, -size, 0), Vector3(0, 0, size))
+	generate(Vector3(0, -size, 0), Vector3(size, 0, size))
+	generate(Vector3(-size, 0, 0), Vector3(0, size, size))
+	generate(Vector3(0, 0, 0), Vector3(size, size, size))
+	
+	generate(Vector3(-size, -size, -size), Vector3(0, 0, 0))
+	generate(Vector3(0, -size, -size), Vector3(size, 0, 0))
+	generate(Vector3(-size, 0, -size), Vector3(0, size, 0))
+	generate(Vector3(0, 0, -size), Vector3(size, size, 0))
 
 
-func generate():
+func generate(start, end):
 	randomize()
 	var _seed = randf() * 254
 	var i = 0
 	
 	var timer = OS.get_ticks_msec()
+	var size = end.x - start.x
 	
-	for x in range (-size, size+1):	
-		for y in range (-size, size+1):
-			for z in range (-size, size+1):
+	for x in range (start.x, end.x):
+		for y in range (start.y, end.y):
+			for z in range (start.z, end.z):
 				if (x in range(-1, 2)) and (y in range(-1, 2)) and (z in range(-1, 2)):
 					# make room for player
 					set_cell_item(x, y, z, -1)
